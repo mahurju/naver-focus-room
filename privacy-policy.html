@@ -67,18 +67,20 @@
   </head>
   <body>
     <div class="container">
-      
+
       <h1>Privacy Policy</h1>
       <p class="subtitle">
         N Meeting Room Reservation (Chrome Extension) &middot; Effective Date:
-        March 1, 2026
+        March 1, 2026 &middot; Revised: October 22, 2026
       </p>
 
       <h2>1. Purpose of Collection and Use of Personal Information</h2>
       <p>
         This extension is a helper tool for the Naver internal meeting room
-        reservation service (reserve.navercorp.com). It does not collect or store
-        any personal information separately.
+        reservation service (reserve.navercorp.com). It does not collect personally
+        identifiable information such as names, emails, employee numbers, or
+        schedule contents. It collects only anonymous usage statistics to improve
+        its features (see Section 2).
       </p>
 
       <h2>2. Personal Information Collected</h2>
@@ -88,12 +90,24 @@
         has already logged into to make API calls. During this process, cookie
         information is processed only within the browser.
       </p>
+      <p>To improve its features, the extension collects the following anonymous usage statistics:</p>
+      <ul>
+        <li>Usage event types (room search, reservation, recurring reservation, etc.) and aggregate values such as counts and service type</li>
+        <li>Extension version</li>
+        <li>A random anonymous identifier (clientId) generated on install, not linked to any personal information</li>
+      </ul>
+      <p>
+        Statistics are sent to Naver's internal log collection platform (NELO,
+        nelo2-col.navercorp.com). The collection server may record the
+        connecting IP address. Authentication cookies are not sent.
+      </p>
 
       <h2>3. Retention and Use Period of Personal Information</h2>
       <p>
-        This extension does not operate any separate servers and does not store
-        or transmit user data externally. All data is processed only within the
-        browser's local environment.
+        This extension does not operate any separate servers. Reservation and
+        filter settings are stored only in the browser's local storage. Anonymous
+        usage statistics are retained and deleted according to NELO's retention
+        policy.
       </p>
 
       <h2>4. Disclosure of Personal Information to Third Parties</h2>
@@ -116,13 +130,22 @@
           retrieve meeting room reservation information and verify user
           authentication.
         </li>
+        <li>
+          <strong>host_permissions</strong>: calendar.navercorp.com — Applies the
+          reserved room to the location of calendar events.
+        </li>
+        <li>
+          <strong>host_permissions</strong>: nelo2-col.navercorp.com — Sends
+          anonymous usage statistics.
+        </li>
       </ul>
 
       <h2>7. Data Transmission</h2>
       <p>
         This extension does not transmit any data to external servers other than
-        the Naver internal domains specified above. No analytics tools,
-        advertising, or tracking technologies are used.
+        the Naver internal domains specified above. Usage statistics are sent
+        only to the internal NELO platform. No external analytics, advertising,
+        or tracking tools are used.
       </p>
 
       <h2>8. Contact</h2>
@@ -140,7 +163,7 @@
       </ul>
 
       <div class="footer">
-        <p>This policy is effective as of March 1, 2026.</p>
+        <p>This policy is effective as of March 1, 2026, and was revised on October 22, 2026.</p>
       </div>
     </div>
   </body>
